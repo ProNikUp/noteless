@@ -2,6 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="noteless_endpointsSrc" target="1.7" />
+      <module name="noteless_functionalTest" target="1.7" />
       <module name="noteless_main" target="1.7" />
       <module name="noteless_test" target="1.7" />
     </bytecodeTargetLevel>

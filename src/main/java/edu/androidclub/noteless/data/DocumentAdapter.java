@@ -7,8 +7,8 @@ import java.lang.reflect.Field;
 /**
  * Created by eltgm on 30.03.17.
  */
-public class DocumentAdapter<T>{
-    Document createDocument(T arg) throws IllegalAccessException {
+public class DocumentAdapter{
+   public static <T> Document createDocument(T arg) throws IllegalAccessException {
         Document document = new Document();
         Class<?> clazz = arg.getClass();
         Field[] fields = clazz.getDeclaredFields();
@@ -18,10 +18,19 @@ public class DocumentAdapter<T>{
         }
         return document;
     }
-    T documentReverse(Document document){
-
-        T returned;
-        returned = document.get
-        return returned;
+    public static <T> T documentReverse(Class<T> clazz,Document document){
+        Object result = new Object();
+        Field[] classFields = clazz.getDeclaredFields();
+        for (Field classField : classFields) {
+            String fieldName = classField.getName();
+            if(document.containsKey(fieldName)){
+                try {
+                    classField.set(result, document.get(fieldName));
+                } catch (IllegalAccessException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return (T) result;
     }
 }

@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/noteless.iml" filepath="$PROJECT_DIR$/.idea/modules/noteless.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/noteless_endpointsSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/noteless_endpointsSrc.iml" group="noteless" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/noteless_functionalTest.iml" filepath="$PROJECT_DIR$/.idea/modules/noteless_functionalTest.iml" group="noteless" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/noteless_main.iml" filepath="$PROJECT_DIR$/.idea/modules/noteless_main.iml" group="noteless" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/noteless_test.iml" filepath="$PROJECT_DIR$/.idea/modules/noteless_test.iml" group="noteless" />
     </modules>
