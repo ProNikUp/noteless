@@ -30,4 +30,5 @@ public class UsersMemoryStorage implements UsersRepository {
         database.put(token, user);
         return user;
     }
+
 }
